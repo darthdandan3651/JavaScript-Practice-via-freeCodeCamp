@@ -1,0 +1,25 @@
+let adjective, noun, verb, place, adjective2, noun2;
+
+adjective = "young";
+noun = "man";
+verb = "activated";
+place = "house";
+adjective2 = "rocket";
+noun2 = "noodles";
+
+let firstStory;
+firstStory = "Once upon a time, there was a(n) " + adjective + " " + noun + " who loved to eat " + noun2 + ". The " + noun + " lived in a " + place + " and had " + adjective2 + " nostrils that blew fire when it was " + verb + "."
+
+console.log("First story: " + firstStory);
+
+adjective = "old";
+noun = "woman";
+verb = "activated";
+place = "mansion";
+adjective2 = "rocket";
+noun2 = "burgers";
+
+let secondStory;
+secondStory = "Once upon a time, there was a(n) " + adjective + " " + noun + " who loved to eat " + noun2 + ". The " + noun + " lived in a " + place + " and had " + adjective2 + " nostrils that blew fire when it was " + verb + "."
+
+console.log("Second story: " + secondStory);
