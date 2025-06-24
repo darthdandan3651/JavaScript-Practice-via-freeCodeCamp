@@ -1,0 +1,22 @@
+console.log("Hello! I'm your coding fun fact guide!");
+let botName, botLocation, favoriteLanguage;
+
+botName = "R2-D2";
+botLocation = "a galaxy far, far, away";
+favoriteLanguage = "binary";
+
+console.log("My name is " + botName + " and I live on " + botLocation + ".");
+console.log("My favorite programming language is " + favoriteLanguage + ".");
+
+let codingFact;
+codingFact = "Not many people speak my language in the Star Wars universe.";
+
+console.log(codingFact);
+
+codingFact = "My best friend is C-3PO and he speaks " + favoriteLanguage + ".";
+console.log(codingFact);
+
+codingFact = "Another friend of mine named Chopper also speaks " + favoriteLanguage + ".";
+console.log(codingFact);
+
+console.log("It was fun sharing these facts with you. Goodbye! " + botName + " from " + botLocation + ".");
