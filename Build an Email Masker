@@ -1,0 +1,14 @@
+let email = "myEmail@email.com";
+
+function maskEmail(email){
+  let location = email.indexOf("@"); // returns location of @
+  let before = email.slice(0, location); // returns everything before @
+  let after = email.slice(location); // returns everything after @ 
+  let symbol = "*"; 
+
+  let maskedPart = before[0] + symbol.repeat(before.length - 2) + before[before.length - 1]; // first letter + * up till last letter + last letter
+  let finalResult = maskedPart + after;
+  return finalResult;
+}
+
+console.log(maskEmail(email));
