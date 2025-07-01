@@ -1,7 +1,7 @@
 let email = "myEmail@email.com";
 
 function maskEmail(email){
-  let location = email.indexOf("@"); // returns location of @
+  let location = email.indexOf("@"); // gives location of @
   let before = email.slice(0, location); // returns everything before @
   let after = email.slice(location); // returns everything after @ 
   let symbol = "*"; 
