@@ -1,0 +1,12 @@
+function truncateString(str, num){
+  if(str.length > num){ // if string length is less than number
+    let before = str.slice(0, num); // return everything before index at num
+    let truncate = before + "..."; // before concatenated with ... 
+    return truncate;
+  }
+  else if(str.length <= num){ // less than or equal to returns the string unchanged
+    return str;
+  }
+}
+
+console.log(truncateString("A-tisket a-tasket A green and yellow basket", 8));
