@@ -1,0 +1,54 @@
+const questions = [
+  {
+    category: "Category 1",
+    question: "Question 1?",
+    choices: ["Choice 1", "Choice 2", "Choice 3"],
+    answer: "Choice 1"
+  },
+  
+  {
+    category: "Category 2",
+    question: "Question 2?",
+    choices: ["Choice 1", "Choice 2", "Choice 3"],
+    answer: "Choice 2"
+  },
+
+  {
+    category: "Category 3",
+    question: "Question 3?",
+    choices: ["Choice 1", "Choice 2", "Choice 3"],
+    answer: "Choice 3"
+  },
+  
+  {
+    category: "Category 4",
+    question: "Question 4?",
+    choices: ["Choice 1", "Choice 2", "Choice 3"],
+    answer: "Choice 1"
+  },
+
+  {
+    category: "Category 5",
+    question: "Question 5?",
+    choices: ["Choice 1", "Choice 2", "Choice 3"],
+    answer: "Choice 2"
+  },
+];
+
+function getRandomQuestion(array){
+  let random = Math.floor(Math.random() * (array.length - 0) + 0);
+  return array[random];
+}
+
+function getRandomComputerChoice(array){
+  let answer = Math.floor(Math.random() * (array.length - 0) + 0);
+  return array[answer];
+}
+
+function getResults(questionObject, computerChoice){
+  if(questionObject.answer === computerChoice)
+    return "The computer's choice is correct!";
+  else {
+    return `The computer's choice is wrong. The correct answer is: ${questionObject.answer}`;
+  }
+}
